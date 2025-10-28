@@ -1,3 +1,87 @@
 body {
     margin: 0;
+    --unit-font: 'Times New Roman', Times, serif;
+    --unit-color: black;
+}
+
+.conversion_header{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #7438f5;
+    min-height: 200px;
+    height: 30dvh;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+}
+
+.conversions{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #5e4496;
+    padding: 40px 20px;
+    background-color: #f3f2f5;
+
+}
+
+#number_input-el{
+    align-self: center;
+    text-align: center;
+    font-size: 2.2rem;
+    color:white;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    border-radius: 4px;
+    height: 60px;
+    width: 70px;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#convert-btn{
+    align-self: center;
+    text-align: center;
+    margin-top: 20px;
+    width: 80px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#convert-btn:hover{
+    border: 1px solid black;
+}
+
+.unit.container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 15px;
+}
+
+#length-span{
+    font-family: var(--unit-font);
+    color: var(--unit-color);
+}
+
+#volume-span{
+    font-family: var(--unit-font);
+    color: var(--unit-color);
+}
+
+#mass-span{
+    font-family: var(--unit-font);
+    color: var(--unit-color);
 }
