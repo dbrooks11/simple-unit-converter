@@ -12,9 +12,18 @@ body {
     color: white;
     background-color: #6943FF;
     min-height: 200px;
-    height: 30dvh;
+    height: 35dvh;
     font-family:Arial, Helvetica, sans-serif;
     font-weight:bold;
+}
+
+#theme-btn{
+    margin: 10px;
+    height: 25px;
+    width: 120px;
+    border: 2px black dotted;
+    border-radius: 4px;
+    background-color: #3712e0;
 }
 
 #number_input-el{
@@ -27,7 +36,7 @@ body {
     border: 1px solid white;
     border-radius: 4px;
     height: 60px;
-    width: 70px;
+    width: 90px;
 }
 
 
@@ -46,7 +55,7 @@ input[type=number] {
     align-self: center;
     text-align: center;
     margin-top: 20px;
-    width: 80px;
+    width: 100px;
     height: 35px;
     background-color: white;
     border: none;
@@ -66,7 +75,7 @@ input[type=number] {
     padding: 40px 20px;
     background-color: #F4F4F4;
     gap: 20px;
-    height: 70dvh;
+    height: 65dvh;
     box-sizing: border-box;
 }
 
