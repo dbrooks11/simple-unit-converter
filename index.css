@@ -2,6 +2,7 @@ body {
     margin: 0;
     --unit-font: 'Times New Roman', Times, serif;
     --unit-color: black;
+    --unit-container-bg-color: #FFFFFF;
 }
 
 .conversion_header{
@@ -9,25 +10,18 @@ body {
     display: flex;
     flex-direction: column;
     color: white;
-    background-color: #7438f5;
+    background-color: #6943FF;
     min-height: 200px;
     height: 30dvh;
     font-family:Arial, Helvetica, sans-serif;
     font-weight:bold;
 }
 
-.conversions{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #5e4496;
-    padding: 40px 20px;
-    background-color: #f3f2f5;
-
-}
-
 #number_input-el{
     align-self: center;
     text-align: center;
     font-size: 2.2rem;
+    font-weight: bold;
     color:white;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid white;
@@ -63,12 +57,26 @@ input[type=number] {
     border: 1px solid black;
 }
 
+.conversions{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1rem;
+    color: #b6a7fc;
+    padding: 40px 20px;
+    background-color: #F4F4F4;
+    gap: 20px;
+    height: 70dvh;
+    box-sizing: border-box;
+}
+
 .unit.container{
     text-align: center;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--unit-container-bg-color);
     gap: 15px;
+    padding: 30px 0px;
 }
 
 #length-span{
@@ -85,3 +93,4 @@ input[type=number] {
     font-family: var(--unit-font);
     color: var(--unit-color);
 }
+

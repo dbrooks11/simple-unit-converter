@@ -6,9 +6,15 @@
 
 let input = document.querySelector("#number_input-el")
 let convertBtn = document.querySelector("#convert-btn")
+let themeBtn = document.querySelector("#theme-btn")
 let length = document.querySelector("#length-span")
 let volume = document.querySelector("#volume-span")
 let mass = document.querySelector("#mass-span")
+
+//containers for theme toggle
+let allUnitContainer = document.querySelector(".conversions")
+let unitContainer = document.querySelectorAll(".unit")
+let unitText = document.querySelectorAll(".units")
 
 function convertLength(num){
     let num_value = parseFloat(num.value)
@@ -43,5 +49,22 @@ convertBtn.onclick = () => {
     let convert_mass = convertMass(input)
 
     renderUnits(convert_length, convert_volume, convert_mass, input)
+}
+
+//false == Light Mode, true == Dark Mode
+let themeToggle = false
+themeBtn.onclick = () => {
+    if (!themeToggle){
+        allUnitContainer.style.backgroundColor = "#1F2937"
+        unitContainer.forEach(div => div.style.backgroundColor = "#273549")
+        unitText.forEach(span => span.style.color = "white")
+        themeToggle = true
+    }
+    else if(themeToggle){
+        allUnitContainer.style.backgroundColor = "#F4F4F4"
+        unitContainer.forEach(div => div.style.backgroundColor = "#FFFFFF")
+        unitText.forEach(span => span.style.color = "black")
+        themeToggle = false
+    }
 }
 
